@@ -1,17 +1,17 @@
 variable "bypass" {
-  type = "string"
+  type = string
 }
 
 variable "name" {
-  type = "string"
+  type = string
 }
 
 variable "users" {
-  type = "list"
+  type = list
 
   default = []
 }
 
 variable "policy_arn" {
-  type = "string"
+  type = string
 }
