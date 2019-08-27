@@ -10,9 +10,7 @@ resource "aws_iam_group_membership" "group_membership" {
   name  = var.name
   group = aws_iam_group.group[0].name
 
-  users = [
-    var.users,
-  ]
+  users = var.users
 }
 
 resource "aws_iam_group_policy_attachment" "group_policy" {
