@@ -7,7 +7,7 @@ variable "name" {
 }
 
 variable "users" {
-  type = list
+  type = list(string)
 
   default = []
 }
